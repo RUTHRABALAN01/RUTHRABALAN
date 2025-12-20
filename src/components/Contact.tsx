@@ -1,12 +1,11 @@
 import { Button } from '@/components/ui/button';
-import { Mail, Github, Linkedin, Twitter, ArrowRight } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   const socialLinks = [
     { icon: Github, href: '#', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:ruthrabalan@example.com', label: 'Email' },
   ];
 
   return (
@@ -21,13 +20,13 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-primary font-mono text-sm">// GET IN TOUCH</span>
           <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
-            Let's Build
+            Let's Collaborate on
             <br />
-            <span className="text-gradient">Something Amazing</span>
+            <span className="text-gradient">AI Solutions</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Interested in collaborating on AI/ML projects? Let's discuss how we can 
-            leverage machine learning to solve complex problems together.
+            Interested in AI/ML research, CAD automation, or computer vision projects? 
+            I'm always open to discussing innovative engineering solutions and collaboration opportunities.
           </p>
           
           {/* CTA Button */}
@@ -53,10 +52,10 @@ const Contact = () => {
           {/* Email Display */}
           <div className="mt-10">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:ruthrabalan@example.com"
               className="font-mono text-muted-foreground hover:text-primary transition-colors"
             >
-              hello@example.com
+              ruthrabalan@example.com
             </a>
           </div>
         </div>

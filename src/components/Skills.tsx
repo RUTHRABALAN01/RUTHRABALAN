@@ -1,29 +1,42 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Deep Learning',
-      skills: ['PyTorch', 'TensorFlow', 'Keras', 'JAX', 'Hugging Face'],
+      title: 'Artificial Intelligence',
+      skills: ['Machine Learning', 'Deep Learning', 'Supervised Learning', 'Unsupervised Learning', 'Model Evaluation'],
     },
     {
-      title: 'Machine Learning',
-      skills: ['Scikit-learn', 'XGBoost', 'LightGBM', 'AutoML', 'Feature Engineering'],
+      title: 'Computer Vision & Geometry',
+      skills: ['OpenCV', 'Multi-Camera Systems', 'Object Tracking', 'Point Clouds', 'Mesh Processing', 'B-Rep Concepts'],
     },
     {
-      title: 'NLP & LLMs',
-      skills: ['Transformers', 'LangChain', 'GPT', 'BERT', 'RAG Systems'],
+      title: 'Programming Languages',
+      skills: ['Python', 'C/C++ (basic)', 'MATLAB (academic)'],
     },
     {
-      title: 'Computer Vision',
-      skills: ['OpenCV', 'YOLO', 'ResNet', 'Stable Diffusion', 'Image Segmentation'],
+      title: 'Engineering & Systems',
+      skills: ['CAD Systems', 'Visualization Pipelines', 'Rule-Based Systems', 'Optimization', 'Simulation-Aware Design'],
     },
     {
-      title: 'MLOps & Cloud',
-      skills: ['AWS SageMaker', 'GCP Vertex AI', 'MLflow', 'Kubeflow', 'Docker'],
+      title: 'AI / ML Tools',
+      skills: ['Data Preprocessing', 'Feature Engineering', 'Neural Networks', 'Model Training', 'Evaluation Metrics'],
     },
     {
-      title: 'Data Engineering',
-      skills: ['Apache Spark', 'Airflow', 'SQL', 'Pandas', 'Dask'],
+      title: 'Tools & Platforms',
+      skills: ['Git', 'GitHub', 'Linux', 'Fusion 360 API', 'Jupyter', 'VS Code'],
     },
+  ];
+
+  const coreSkills = [
+    'Artificial Intelligence',
+    'Machine Learning', 
+    'Deep Learning',
+    'Computer Vision',
+    '3D Geometry Processing',
+    'CAD Automation',
+    'AI-Driven Visualization',
+    'Algorithm Design',
+    'System-Level Thinking',
+    'Research-Oriented Development',
   ];
 
   return (
@@ -37,8 +50,23 @@ const Skills = () => {
             Skills & <span className="text-gradient">Technologies</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A comprehensive toolkit for building end-to-end AI solutions
+            A comprehensive toolkit for building end-to-end AI solutions for engineering workflows
           </p>
+        </div>
+        
+        {/* Core Skills */}
+        <div className="mb-16">
+          <h3 className="font-mono text-lg text-center text-primary mb-8">Core Competencies</h3>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            {coreSkills.map((skill, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 text-sm font-mono bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-foreground rounded-full hover:border-primary/50 hover:bg-primary/20 transition-all cursor-default"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -61,21 +89,6 @@ const Skills = () => {
                   </span>
                 ))}
               </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Stats Bar */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { value: '50+', label: 'ML Models Deployed' },
-            { value: '10M+', label: 'Predictions/Day' },
-            { value: '15+', label: 'Research Papers' },
-            { value: '99.9%', label: 'Model Uptime' },
-          ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-gradient">{stat.value}</div>
-              <div className="text-muted-foreground font-mono text-sm mt-2">{stat.label}</div>
             </div>
           ))}
         </div>
