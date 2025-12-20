@@ -24,10 +24,8 @@ const Hero = () => {
             </div>
             
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              <span className="text-foreground">Ruthrabalan</span>
-              <br />
-              <span className="text-gradient">Manthramoorthi</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up tracking-tight" style={{ animationDelay: '0.1s' }}>
+              <span className="text-gradient">RUTHRABALAN</span>
             </h1>
             
             {/* Role */}
@@ -58,7 +56,7 @@ const Hero = () => {
               <div className="w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-gradient relative">
                 <img 
                   src={avatarImage} 
-                  alt="Ruthrabalan Manthramoorthi" 
+                  alt="Ruthrabalan" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
