@@ -1,110 +1,118 @@
-import { ExternalLink, Github, Brain, Eye, MessageSquare, BarChart3 } from 'lucide-react';
+import { ExternalLink, Github, Eye, Layers, Cpu, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Neural Vision API',
-      description: 'Production-grade computer vision API serving 2M+ requests daily. Features real-time object detection, image classification, and semantic segmentation.',
-      tags: ['PyTorch', 'FastAPI', 'Docker', 'YOLO'],
-      icon: Eye,
-      gradient: 'from-cyan-500/20 to-blue-500/20',
-    },
-    {
-      title: 'LLM Chat Platform',
-      description: 'Enterprise conversational AI platform with RAG capabilities. Handles multi-turn conversations with context-aware responses.',
-      tags: ['LangChain', 'GPT-4', 'Vector DB', 'React'],
-      icon: MessageSquare,
-      gradient: 'from-purple-500/20 to-pink-500/20',
-    },
-    {
-      title: 'Predictive Analytics Engine',
-      description: 'Time-series forecasting system for financial markets. Achieves 94% accuracy on next-day predictions using ensemble methods.',
-      tags: ['XGBoost', 'LSTM', 'Apache Spark', 'AWS'],
-      icon: BarChart3,
-      gradient: 'from-emerald-500/20 to-teal-500/20',
-    },
-    {
-      title: 'AutoML Pipeline',
-      description: 'End-to-end automated machine learning system. Handles feature engineering, model selection, and hyperparameter optimization.',
-      tags: ['AutoML', 'MLflow', 'Kubernetes', 'Airflow'],
-      icon: Brain,
-      gradient: 'from-orange-500/20 to-red-500/20',
-    },
+  const flagshipProject = {
+    title: 'AI-Driven Automated Visualization Plugin for CAD Systems',
+    description: 'An intelligent CAD plugin that automatically analyzes mechanical components and assemblies to generate optimal visualizations. The system detects contacts, predicts constraints, and selects informative viewpoints using traditional geometric and rule-based methods in Phase 1, followed by deep learning integration in later phases.',
+    features: [
+      'Automatic contact detection',
+      'Constraint inference',
+      'Viewpoint optimization',
+      'Phase-wise transparent development',
+      'Traditional-to-AI hybrid approach',
+    ],
+    status: 'Phase 1 – Traditional Methods (Active Development)',
+    tags: ['Python', 'Computer Vision', 'CAD API', 'Geometry Processing', 'Rule-Based Systems'],
+  };
+
+  const careerInterests = [
+    { icon: Cpu, title: 'AI Systems Engineering', description: 'Building production-ready AI pipelines' },
+    { icon: Eye, title: 'Computer Vision Engineering', description: 'Visual perception and analysis systems' },
+    { icon: Layers, title: 'CAD / CAE Automation', description: 'Intelligent design automation' },
+    { icon: Target, title: 'Research & Development', description: 'Industrial AI applications' },
   ];
 
   return (
     <section id="projects" className="py-32 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-primary font-mono text-sm">// PORTFOLIO</span>
+          <span className="text-primary font-mono text-sm">// FLAGSHIP PROJECT</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Featured <span className="text-gradient">Projects</span>
+            Featured <span className="text-gradient">Work</span>
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A selection of AI/ML projects showcasing production-ready solutions
-          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative rounded-2xl border-gradient overflow-hidden hover:scale-[1.02] transition-all duration-300"
-            >
-              {/* Gradient Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+        {/* Flagship Project Card */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <div className="rounded-2xl border-gradient overflow-hidden hover:scale-[1.01] transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
+            
+            <div className="relative p-8 md:p-12 space-y-8">
+              {/* Status Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-sm font-mono text-primary">{flagshipProject.status}</span>
+              </div>
               
-              <div className="relative p-8 space-y-6">
-                {/* Icon */}
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <project.icon className="w-7 h-7 text-primary" />
-                </div>
-                
-                {/* Content */}
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold font-mono group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 text-xs font-mono bg-secondary text-muted-foreground rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Links */}
-                <div className="flex gap-4 pt-4">
-                  <Button variant="cyber" size="sm">
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Button>
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </Button>
-                </div>
+              {/* Title */}
+              <h3 className="text-2xl md:text-3xl font-bold font-mono text-foreground">
+                {flagshipProject.title}
+              </h3>
+              
+              {/* Description */}
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                {flagshipProject.description}
+              </p>
+              
+              {/* Features Grid */}
+              <div className="grid md:grid-cols-2 gap-4">
+                {flagshipProject.features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 pt-4">
+                {flagshipProject.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="px-3 py-1 text-xs font-mono bg-secondary text-muted-foreground rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              
+              {/* Links */}
+              <div className="flex gap-4 pt-4">
+                <Button variant="cyber" size="lg">
+                  <Github className="w-4 h-4" />
+                  View Repository
+                </Button>
+                <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-primary">
+                  <ExternalLink className="w-4 h-4" />
+                  Documentation
+                </Button>
               </div>
             </div>
-          ))}
+          </div>
         </div>
         
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            View All Projects
-            <ExternalLink className="w-4 h-4" />
-          </Button>
+        {/* Career Interests */}
+        <div className="text-center mb-12">
+          <span className="text-primary font-mono text-sm">// CAREER INTERESTS</span>
+          <h3 className="text-2xl md:text-3xl font-bold mt-4">
+            Areas of <span className="text-gradient">Focus</span>
+          </h3>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {careerInterests.map((interest, index) => (
+            <div
+              key={index}
+              className="p-6 rounded-2xl border-gradient group hover:scale-105 transition-all duration-300 text-center"
+            >
+              <div className="w-14 h-14 mx-auto rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <interest.icon className="w-7 h-7 text-primary" />
+              </div>
+              <h4 className="font-mono font-semibold text-foreground mb-2">{interest.title}</h4>
+              <p className="text-sm text-muted-foreground">{interest.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

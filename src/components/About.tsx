@@ -1,11 +1,11 @@
-import { Code2, Database, Cpu, LineChart } from 'lucide-react';
+import { Code2, Eye, Cpu, BookOpen } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    { icon: Code2, label: 'Deep Learning', value: 'PyTorch & TensorFlow' },
-    { icon: Database, label: 'Data Processing', value: 'Big Data Pipelines' },
-    { icon: Cpu, label: 'MLOps', value: 'Production Systems' },
-    { icon: LineChart, label: 'Research', value: 'Published Papers' },
+    { icon: Eye, label: 'Computer Vision', value: 'Multi-Camera Systems' },
+    { icon: Code2, label: 'CAD Automation', value: 'AI-Driven Design' },
+    { icon: Cpu, label: 'Deep Learning', value: 'Neural Networks' },
+    { icon: BookOpen, label: 'Research', value: 'Hybrid AI Systems' },
   ];
 
   return (
@@ -17,22 +17,31 @@ const About = () => {
             <div className="space-y-4">
               <span className="text-primary font-mono text-sm">// ABOUT ME</span>
               <h2 className="text-4xl md:text-5xl font-bold">
-                Passionate about
+                Engineering-First
                 <br />
-                <span className="text-gradient">AI Innovation</span>
+                <span className="text-gradient">AI Approach</span>
               </h2>
             </div>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                I'm a Machine Learning Engineer with 5+ years of experience building 
-                production-grade AI systems. My expertise spans from research prototyping 
-                to deploying scalable ML pipelines that serve millions of predictions daily.
+                I am an Artificial Intelligence and Machine Learning engineering student 
+                focused on building practical, system-level AI solutions rather than 
+                isolated models. My work combines classical algorithms, computer vision, 
+                geometric reasoning, and deep learning to automate complex engineering 
+                and design workflows.
               </p>
               <p>
-                Currently focused on large language models, computer vision, and 
-                the intersection of AI with real-world applications. I believe in 
-                making AI accessible, efficient, and impactful.
+                I am particularly interested in AI applications for CAD systems, 
+                visualization, simulation, and industrial problem-solving, where 
+                accuracy, interpretability, and performance matter more than hype. 
+                I prefer understanding the fundamentals first and then integrating 
+                machine learning in a controlled, explainable way.
+              </p>
+              <p>
+                I actively document my development process phase by phase to maintain 
+                transparency and demonstrate real engineering workflow instead of only 
+                showcasing final results.
               </p>
             </div>
             
@@ -51,34 +60,30 @@ const About = () => {
             </div>
           </div>
           
-          {/* Right Visual */}
+          {/* Right Visual - Philosophy */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl border-gradient overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-              <div className="absolute inset-0 grid-pattern opacity-30" />
+            <div className="rounded-2xl border-gradient overflow-hidden relative p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+              <div className="absolute inset-0 grid-pattern opacity-20" />
               
-              {/* Code-like decoration */}
-              <div className="absolute inset-8 flex flex-col justify-center font-mono text-sm space-y-2">
-                <div className="text-muted-foreground">
-                  <span className="text-accent">class</span> <span className="text-primary">MLEngineer</span>:
-                </div>
-                <div className="pl-4 text-muted-foreground">
-                  <span className="text-accent">def</span> <span className="text-foreground">__init__</span>(self):
-                </div>
-                <div className="pl-8 text-muted-foreground">
-                  self.skills = [<span className="text-primary">"ML"</span>, <span className="text-primary">"DL"</span>, <span className="text-primary">"NLP"</span>]
-                </div>
-                <div className="pl-8 text-muted-foreground">
-                  self.passion = <span className="text-accent">True</span>
-                </div>
-                <div className="pl-8 text-muted-foreground">
-                  self.coffee = <span className="text-primary">float</span>(<span className="text-accent">"inf"</span>)
-                </div>
-                <div className="pl-4 pt-4 text-muted-foreground">
-                  <span className="text-accent">def</span> <span className="text-foreground">build</span>(self, idea):
-                </div>
-                <div className="pl-8 text-muted-foreground">
-                  <span className="text-accent">return</span> <span className="text-primary">Production</span>(idea)
+              <div className="relative space-y-6">
+                <h3 className="font-mono text-xl text-primary mb-6">Project Philosophy</h3>
+                
+                <div className="space-y-4">
+                  {[
+                    'Focus on real-world engineering constraints',
+                    'Hybrid approach: classical methods first, AI second',
+                    'Explainable and modular system design',
+                    'Performance-aware development',
+                    'Research-ready architecture',
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 group">
+                      <span className="text-primary font-mono text-sm mt-1">0{index + 1}</span>
+                      <p className="text-muted-foreground group-hover:text-foreground transition-colors">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
               
