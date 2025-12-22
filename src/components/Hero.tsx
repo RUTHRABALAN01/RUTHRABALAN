@@ -50,16 +50,20 @@ const Hero = () => {
           {/* Right - Avatar */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
-              <div className="w-72 h-96 md:w-80 md:h-[28rem] overflow-hidden relative group flex items-center justify-center bg-foreground rounded-lg">
+              <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden relative group flex items-end justify-center">
                 <img 
                   src={avatarImage} 
                   alt="Ruthrabalan" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-auto object-contain drop-shadow-2xl"
                 />
               </div>
+              {/* Decorative circle behind avatar */}
+              <div className="absolute inset-0 -z-10 flex items-center justify-center">
+                <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border border-foreground/20" />
+              </div>
               {/* Corner Accents */}
-              <div className="absolute -top-2 -left-2 w-8 h-8 border-l border-t border-foreground/40" />
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r border-b border-foreground/40" />
+              <div className="absolute -top-4 -left-4 w-10 h-10 border-l-2 border-t-2 border-foreground/30" />
+              <div className="absolute -bottom-4 -right-4 w-10 h-10 border-r-2 border-b-2 border-foreground/30" />
             </div>
           </div>
         </div>
