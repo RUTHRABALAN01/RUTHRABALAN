@@ -4,8 +4,8 @@ import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 const Contact = () => {
   const socialLinks = [
     { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:ruthrabalan@example.com', label: 'Email' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ruthrabalan-manthramoorthi/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:ruthraog@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -52,10 +52,10 @@ const Contact = () => {
           {/* Email Display */}
           <div className="mt-10">
             <a
-              href="mailto:ruthrabalan@example.com"
+              href="mailto:ruthraog@gmail.com"
               className="font-mono text-muted-foreground hover:text-primary transition-colors"
             >
-              ruthrabalan@example.com
+              ruthraog@gmail.com
             </a>
           </div>
         </div>
