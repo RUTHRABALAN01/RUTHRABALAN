@@ -4,7 +4,7 @@ import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 const Contact = () => {
   const socialLinks = [
     { icon: Github, href: 'RUTHRABALAN01', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/ruthrabalan-manthramoorthi/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:ruthraog@gmail.com', label: 'Email' },
   ];
 
