@@ -50,11 +50,11 @@ const Hero = () => {
           {/* Right - Avatar */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
-              <div className="w-72 h-96 md:w-80 md:h-[28rem] overflow-hidden relative group flex items-center justify-center">
+              <div className="w-72 h-96 md:w-80 md:h-[28rem] overflow-hidden relative group flex items-center justify-center bg-foreground rounded-lg">
                 <img 
                   src={avatarImage} 
                   alt="Ruthrabalan" 
-                  className="w-full h-full object-contain mix-blend-multiply invert"
+                  className="w-full h-full object-contain"
                 />
               </div>
               {/* Corner Accents */}
