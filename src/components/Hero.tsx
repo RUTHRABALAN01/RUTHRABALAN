@@ -1,84 +1,112 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Star } from 'lucide-react';
 import avatarImage from '@/assets/avatar.png';
 
 const Hero = () => {
+  const stats = [
+    { number: '10+', label: 'PROJECTS DONE' },
+    { number: '3+', label: 'YEARS EXPERIENCE' },
+    { number: '5+', label: 'TECHNOLOGIES' },
+  ];
+
+  const marqueeText = 'AI SYSTEMS • COMPUTER VISION • CAD AUTOMATION • DEEP LEARNING • GRAPH NEURAL NETWORKS • ';
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Subtle Grid Background */}
-      <div className="absolute inset-0 grid-pattern opacity-30" />
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
+      {/* Grid Background */}
+      <div className="absolute inset-0 grid-pattern opacity-40" />
       
-      {/* Subtle Glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-foreground/5 rounded-full blur-[120px]" />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Main Content */}
+      <div className="flex-1 container mx-auto px-6 pt-24 pb-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[70vh]">
+          
           {/* Left Content */}
-          <div className="text-center lg:text-left order-2 lg:order-1">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-3 px-5 py-2 border border-foreground/20 mb-10 animate-fade-up">
-              <span className="w-2 h-2 bg-foreground rounded-full" />
-              <span className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/70">AI/ML Engineering Student</span>
+          <div className="order-2 lg:order-1 space-y-8">
+            {/* Stats Row */}
+            <div className="flex gap-8 animate-fade-up">
+              {stats.map((stat, index) => (
+                <div key={index} className="text-left">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-4xl md:text-5xl font-display text-foreground">{stat.number}</span>
+                    <Star className="w-4 h-4 text-primary fill-primary" />
+                  </div>
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider">{stat.label}</span>
+                </div>
+              ))}
             </div>
-            
+
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-up tracking-tight" style={{ animationDelay: '0.1s' }}>
-              <span className="text-foreground">RUTHRABALAN</span>
-            </h1>
-            
-            {/* Role */}
-            <p className="text-base md:text-lg text-foreground/60 font-mono mb-6 animate-fade-up tracking-wide" style={{ animationDelay: '0.15s' }}>
-              AI Systems • Computer Vision • CAD Automation
-            </p>
-            
+            <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-display leading-[0.85] tracking-wide">
+                <span className="text-foreground">AI/ML</span>
+                <br />
+                <span className="text-primary">ENGINEER</span>
+              </h1>
+            </div>
+
             {/* Description */}
-            <p className="text-base text-foreground/50 max-w-lg mx-auto lg:mx-0 mb-12 animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            <p className="text-base md:text-lg text-muted-foreground max-w-md animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
               Building intelligent systems that automate engineering workflows using AI, geometry, and simulation-aware logic.
             </p>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: '0.3s' }}>
-              <Button variant="glow" size="xl">
-                View Projects
-              </Button>
-              <Button variant="cyber" size="xl">
-                Get in Touch
+
+            {/* CTA Button */}
+            <div className="animate-fade-up" style={{ animationDelay: '0.3s' }}>
+              <Button 
+                variant="default" 
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold uppercase tracking-wider px-8 py-6 text-sm"
+              >
+                Get Started
+                <ArrowDown className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
-          
-          {/* Right - Avatar */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-up" style={{ animationDelay: '0.2s' }}>
+
+          {/* Right - Avatar with Accent */}
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-up" style={{ animationDelay: '0.15s' }}>
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden relative group flex items-end justify-center">
+              {/* Neon accent shape behind */}
+              <div className="absolute -top-8 -right-8 w-48 h-48 md:w-64 md:h-64 bg-primary rounded-full opacity-80" />
+              
+              {/* Avatar Container */}
+              <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden flex items-end justify-center">
                 <img 
                   src={avatarImage} 
                   alt="Ruthrabalan" 
-                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  className="w-full h-auto object-contain drop-shadow-2xl relative z-10"
                 />
               </div>
-              {/* Decorative circle behind avatar */}
-              <div className="absolute inset-0 -z-10 flex items-center justify-center">
-                <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border border-foreground/20" />
+
+              {/* Name Badge */}
+              <div className="absolute bottom-8 left-0 bg-background/90 backdrop-blur-sm border border-border px-4 py-2 z-20">
+                <span className="font-display text-2xl md:text-3xl text-foreground">RUTHRABALAN</span>
               </div>
-              {/* Corner Accents */}
-              <div className="absolute -top-4 -left-4 w-10 h-10 border-l-2 border-t-2 border-foreground/30" />
-              <div className="absolute -bottom-4 -right-4 w-10 h-10 border-r-2 border-b-2 border-foreground/30" />
+
+              {/* Decorative Star */}
+              <div className="absolute top-4 left-4 z-20">
+                <Star className="w-8 h-8 text-primary fill-primary" />
+              </div>
             </div>
           </div>
         </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
-          <a href="#about" className="flex flex-col items-center gap-2 text-foreground/40 hover:text-foreground transition-colors duration-300">
-            <span className="text-xs font-mono uppercase tracking-[0.2em]">Scroll</span>
-            <ArrowDown className="w-4 h-4 animate-bounce" />
-          </a>
+      </div>
+
+      {/* Marquee Section */}
+      <div className="border-t border-b border-border bg-primary py-4 overflow-hidden">
+        <div className="flex whitespace-nowrap marquee">
+          <span className="text-2xl md:text-3xl font-display text-primary-foreground tracking-wider">
+            {marqueeText.repeat(4)}
+          </span>
         </div>
       </div>
-      
-      {/* Bottom Gradient Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
+
+      {/* Scroll Indicator */}
+      <div className="py-8 flex justify-center">
+        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300">
+          <span className="text-xs uppercase tracking-[0.2em]">Scroll</span>
+          <ArrowDown className="w-4 h-4 animate-bounce" />
+        </a>
+      </div>
     </section>
   );
 };
