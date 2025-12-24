@@ -4,8 +4,8 @@ import avatarImage from '@/assets/avatar.png';
 
 const Hero = () => {
   const stats = [
-    { number: '10+', label: 'PROJECTS DONE' },
-    { number: '3+', label: 'YEARS EXPERIENCE' },
+    { number: '3+', label: 'PROJECTS ONGOING' },
+    { number: 'B.Tech', label: 'AI/ML STUDENT' },
     { number: '5+', label: 'TECHNOLOGIES' },
   ];
 
