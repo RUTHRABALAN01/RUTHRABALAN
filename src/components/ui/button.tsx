@@ -5,22 +5,22 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none text-sm font-medium ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 font-mono uppercase tracking-widest",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 uppercase tracking-wider",
   {
     variants: {
       variant: {
-        default: "bg-foreground text-background hover:bg-foreground/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-foreground/30 bg-transparent text-foreground hover:bg-foreground hover:text-background",
+        outline: "border-2 border-foreground bg-transparent text-foreground hover:bg-foreground hover:text-background",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-secondary hover:text-foreground",
         link: "text-foreground underline-offset-4 hover:underline",
-        glow: "bg-foreground text-background shadow-[0_0_30px_hsl(0_0%_100%/0.2)] hover:shadow-[0_0_50px_hsl(0_0%_100%/0.3)] hover:scale-[1.02]",
-        cyber: "border border-foreground/40 bg-transparent text-foreground hover:bg-foreground/10 hover:border-foreground",
+        glow: "bg-primary text-primary-foreground shadow-[0_0_30px_hsl(68_100%_50%/0.4)] hover:shadow-[0_0_50px_hsl(68_100%_50%/0.6)] hover:scale-[1.02]",
+        cyber: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 px-3",
+        default: "h-10 px-6 py-2",
+        sm: "h-9 px-4",
         lg: "h-12 px-8 text-base",
         xl: "h-14 px-10 text-sm",
         icon: "h-10 w-10",
