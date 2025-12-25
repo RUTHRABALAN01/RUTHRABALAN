@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Star } from 'lucide-react';
+import { ArrowDown, Star, Linkedin } from 'lucide-react';
 import avatarImage from '@/assets/avatar.png';
 
 const Hero = () => {
@@ -49,15 +49,27 @@ const Hero = () => {
               Building intelligent systems that automate engineering workflows using AI, geometry, and simulation-aware logic.
             </p>
 
-            {/* CTA Button */}
-            <div className="animate-fade-up" style={{ animationDelay: '0.3s' }}>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
               <Button 
                 variant="default" 
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold uppercase tracking-wider px-8 py-6 text-sm"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Get Started
                 <ArrowDown className="w-4 h-4 ml-2" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="font-semibold uppercase tracking-wider px-8 py-6 text-sm"
+                asChild
+              >
+                <a href="https://www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
           </div>
