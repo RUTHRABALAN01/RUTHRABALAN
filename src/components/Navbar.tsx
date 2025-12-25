@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Code2 } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,8 +32,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="font-mono text-xl font-bold text-gradient">
-            R.M
+          <a href="#" className="text-primary hover:text-primary/80 transition-colors">
+            <Code2 size={28} strokeWidth={2.5} />
           </a>
 
           {/* Desktop Navigation */}
