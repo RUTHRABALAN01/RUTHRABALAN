@@ -46,7 +46,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-base md:text-lg text-muted-foreground max-w-md animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-              Building intelligent systems that automate engineering workflows using AI, geometry, and simulation-aware logic.
+              Engineering student driven by a passion for technology, networking, and business operations. I seek roles where I can solve real-world problems, support end-users, and improve system efficiency — whether it's analyzing business processes, maintaining IT infrastructure, or streamlining technical operations.
             </p>
 
             {/* CTA Buttons */}
