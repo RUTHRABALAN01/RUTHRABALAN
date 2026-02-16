@@ -7,6 +7,7 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import BusinessOps from '@/components/BusinessOps';
 import NetworkHardware from '@/components/NetworkHardware';
+import WhatMakesMeDifferent from '@/components/WhatMakesMeDifferent';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -36,6 +37,7 @@ const Index = () => {
       <Education />
       <BusinessOps />
       <NetworkHardware />
+      <WhatMakesMeDifferent />
       <Contact />
       <Footer />
     </main>
