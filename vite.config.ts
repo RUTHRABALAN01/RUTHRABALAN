@@ -1,5 +1,9 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react"; // or your specific plugin
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/RUTHRABALAN/", // This MUST match your repo name's casing exactly
+  base: "/RUTHRABALAN/", // ADD THIS LINE (must match your repo name exactly)
   plugins: [react()],
-  // ... keep the rest of your file as is
+  // ... keep the rest of your existing settings
 });
