@@ -1,4 +1,13 @@
-exexport default defineConfig({
-  base: "/RUTHRABALAN/", // This MUST be all caps to match your repo name
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+
+export default defineConfig({
+  base: "/RUTHRABALAN/",
   plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 });
