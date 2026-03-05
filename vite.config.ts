@@ -2,12 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-export default defineConfig({
-  base: "/RUTHRABALAN/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/RUTHRABALAN/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+}));
