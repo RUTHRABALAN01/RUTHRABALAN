@@ -18,14 +18,14 @@ const WhatMakesMeDifferent = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
             <Sparkles className="w-8 h-8 text-primary mb-6 relative" />
             <p className="relative text-muted-foreground leading-relaxed text-lg">
-              I am not limited to writing code. I understand <span className="text-foreground font-semibold">systems, users, and business workflows</span> — 
-              and I know how to connect the dots between them. Whether it's sitting with a client to 
-              gather requirements, collaborating with a development team on architecture, or presenting 
-              solutions to management, I can operate across all layers of a project. My strength lies 
-              in <span className="text-foreground font-semibold">translating complex technical ideas into practical, actionable plans</span> that 
-              everyone — from engineers to stakeholders — can align on. I bring a well-rounded 
-              perspective that goes beyond any single domain, and I am always ready to learn whatever 
-              a role demands.
+              I am not limited to writing code, and I am not positioning myself as someone 
+              who only does analysis. I sit at the intersection of <span className="text-foreground font-semibold">engineering and business operations</span> — 
+              comfortable working with data, requirements, and stakeholders just as much as 
+              with code, models, and systems. Whether it's gathering requirements for a business 
+              analyst task, collaborating with developers on architecture, or presenting trade-offs 
+              to management, I can translate between technical and business language. My strength 
+              is turning complex information into clear, actionable direction that helps teams 
+              build the right thing and explain it well.
             </p>
           </div>
         </div>
