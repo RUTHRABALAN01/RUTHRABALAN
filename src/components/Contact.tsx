@@ -22,11 +22,12 @@ const Contact = () => {
           <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
             Let's Collaborate on
             <br />
-            <span className="text-gradient">AI Solutions</span>
+            <span className="text-gradient">Tech & Business</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Interested in AI/ML research, CAD automation, or computer vision projects? 
-            I'm always open to discussing innovative engineering solutions and collaboration opportunities.
+            Interested in AI/ML engineering, business analysis, CAD automation, computer vision, 
+            or IT operations roles? I'm open to opportunities where I can combine technical 
+            execution with analytical thinking.
           </p>
           
           {/* CTA Button */}
