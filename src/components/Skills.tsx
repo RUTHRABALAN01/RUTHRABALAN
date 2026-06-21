@@ -55,10 +55,10 @@ const Skills = () => {
         <div className="text-center mb-16">
           <span className="text-primary font-mono text-sm">// TECH STACK</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Skills & <span className="text-gradient">Technologies</span>
+            Skills & <span className="text-gradient">Competencies</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A comprehensive toolkit for building end-to-end AI solutions for engineering workflows
+            A versatile toolkit spanning AI/ML engineering, business analysis, data interpretation, and IT operations
           </p>
         </div>
         
