@@ -8,7 +8,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
             <span>Built with</span>
-            <span className="text-primary">engineering-first</span>
+            <span className="text-primary">engineering + business</span>
             <span>mindset</span>
           </div>
         </div>

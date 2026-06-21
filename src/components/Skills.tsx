@@ -17,6 +17,14 @@ const Skills = () => {
       skills: ['CAD Systems', 'Visualization Pipelines', 'Rule-Based Systems', 'Optimization', 'Simulation-Aware Design'],
     },
     {
+      title: 'Business Analysis & Operations',
+      skills: ['Requirements Gathering', 'Process Mapping', 'Stakeholder Communication', 'Documentation', 'Process Improvement'],
+    },
+    {
+      title: 'Data & Analytics',
+      skills: ['Data Interpretation', 'Excel / Spreadsheets', 'Basic SQL', 'Visualization Thinking', 'Metrics & KPIs'],
+    },
+    {
       title: 'AI / ML Tools',
       skills: ['Data Preprocessing', 'Feature Engineering', 'Neural Networks', 'Model Training', 'Evaluation Metrics'],
     },
@@ -31,12 +39,12 @@ const Skills = () => {
     'Machine Learning', 
     'Deep Learning',
     'Computer Vision',
-    '3D Geometry Processing',
+    'Business Analysis',
+    'Requirements Gathering',
+    'Data-Driven Decisions',
+    'Stakeholder Communication',
     'CAD Automation',
-    'AI-Driven Visualization',
-    'Algorithm Design',
     'System-Level Thinking',
-    'Research-Oriented Development',
   ];
 
   return (
@@ -47,10 +55,10 @@ const Skills = () => {
         <div className="text-center mb-16">
           <span className="text-primary font-mono text-sm">// TECH STACK</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Skills & <span className="text-gradient">Technologies</span>
+            Skills & <span className="text-gradient">Competencies</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A comprehensive toolkit for building end-to-end AI solutions for engineering workflows
+            A versatile toolkit spanning AI/ML engineering, business analysis, data interpretation, and IT operations
           </p>
         </div>
         
