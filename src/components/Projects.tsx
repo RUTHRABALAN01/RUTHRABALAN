@@ -30,8 +30,11 @@ const Projects = () => {
         <div className="text-center mb-16">
           <span className="text-primary font-mono text-sm">// CURRENT FOCUS</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Project <span className="text-gradient">Roadmap</span>
+            Projects & <span className="text-gradient">Practical Work</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            A hands-on AI and CAD automation project that also demonstrates structured problem-solving, planning, and documentation — skills I apply to analytical and operations roles too.
+          </p>
         </div>
         
         {/* Phase 1 Card */}
