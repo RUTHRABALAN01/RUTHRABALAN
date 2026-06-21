@@ -6,10 +6,10 @@ const Hero = () => {
   const stats = [
     { number: '3+', label: 'PROJECTS ONGOING' },
     { number: 'B.Tech', label: 'AI/ML STUDENT' },
-    { number: '5+', label: 'TECHNOLOGIES' },
+    { number: 'DUAL', label: 'TECH × BUSINESS' },
   ];
 
-  const marqueeText = 'AI SYSTEMS • COMPUTER VISION • CAD AUTOMATION • DEEP LEARNING • GRAPH NEURAL NETWORKS • ';
+  const marqueeText = 'AI SYSTEMS • COMPUTER VISION • CAD AUTOMATION • BUSINESS ANALYSIS • OPERATIONS • DATA-DRIVEN DECISIONS • IT INFRASTRUCTURE • ';
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
@@ -37,16 +37,16 @@ const Hero = () => {
 
             {/* Main Heading */}
             <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-display leading-[0.85] tracking-wide">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display leading-[0.9] tracking-wide">
                 <span className="text-foreground">AI/ML</span>
                 <br />
-                <span className="text-primary">ENGINEER</span>
+                <span className="text-primary">ENGINEER & ANALYST</span>
               </h1>
             </div>
 
             {/* Description */}
             <p className="text-base md:text-lg text-muted-foreground max-w-md animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-              Engineering student driven by a passion for technology, networking, and business operations. I seek roles where I can solve real-world problems, support end-users, and improve system efficiency — whether it's analyzing business processes, maintaining IT infrastructure, or streamlining technical operations.
+              Engineering student with a foundation in AI/ML, networking, and business operations. I want a role where I can combine engineering execution with analytical thinking — whether that's building AI solutions, analyzing processes as a business analyst trainee, or supporting IT infrastructure.
             </p>
 
             {/* CTA Buttons */}
