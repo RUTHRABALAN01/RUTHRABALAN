@@ -1,11 +1,11 @@
-import { Code2, Eye, Cpu, BookOpen } from 'lucide-react';
+import { Code2, Eye, BarChart3, Users } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     { icon: Eye, label: 'Computer Vision', value: 'Multi-Camera Systems' },
     { icon: Code2, label: 'CAD Automation', value: 'AI-Driven Design' },
-    { icon: Cpu, label: 'Deep Learning', value: 'Neural Networks' },
-    { icon: BookOpen, label: 'Research', value: 'Hybrid AI Systems' },
+    { icon: BarChart3, label: 'Business Analysis', value: 'Requirements & Data' },
+    { icon: Users, label: 'Stakeholder Communication', value: 'Tech ↔ Business' },
   ];
 
   return (
@@ -17,31 +17,31 @@ const About = () => {
             <div className="space-y-4">
               <span className="text-primary font-mono text-sm">// ABOUT ME</span>
               <h2 className="text-4xl md:text-5xl font-bold">
-                Engineering-First
+                AI Engineer with a
                 <br />
-                <span className="text-gradient">AI Approach</span>
+                <span className="text-gradient">Business Lens</span>
               </h2>
             </div>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                I am an Artificial Intelligence and Machine Learning engineering student 
-                focused on building practical, system-level AI solutions rather than 
-                isolated models. My work combines classical algorithms, computer vision, 
-                geometric reasoning, and deep learning to automate complex engineering 
-                and design workflows.
+                I am a B.Tech Artificial Intelligence and Machine Learning student 
+                who builds practical, system-level AI solutions while also developing 
+                strong analytical and operational skills. My technical work combines 
+                classical algorithms, computer vision, geometric reasoning, and deep 
+                learning to automate complex engineering workflows.
               </p>
               <p>
-                I am particularly interested in AI applications for CAD systems, 
-                visualization, simulation, and industrial problem-solving, where 
-                accuracy, interpretability, and performance matter more than hype. 
-                I prefer understanding the fundamentals first and then integrating 
-                machine learning in a controlled, explainable way.
+                Alongside engineering, I am actively preparing for business analyst, 
+                operations, and technical operations roles. I focus on understanding the 
+                "why" behind a problem — gathering requirements, mapping processes, interpreting 
+                data, and communicating solutions so both technical teams and management can 
+                align and act.
               </p>
               <p>
-                I actively document my development process phase by phase to maintain 
-                transparency and demonstrate real engineering workflow instead of only 
-                showcasing final results.
+                I value clarity, transparency, and measurable impact. I document my work 
+                phase by phase and aim to deliver solutions that are technically sound 
+                <em>and</em> commercially meaningful.
               </p>
             </div>
             
@@ -67,15 +67,15 @@ const About = () => {
               <div className="absolute inset-0 grid-pattern opacity-20" />
               
               <div className="relative space-y-6">
-                <h3 className="font-mono text-xl text-primary mb-6">Project Philosophy</h3>
+                <h3 className="font-mono text-xl text-primary mb-6">How I Work</h3>
                 
                 <div className="space-y-4">
                   {[
-                    'Focus on real-world engineering constraints',
-                    'Hybrid approach: classical methods first, AI second',
-                    'Explainable and modular system design',
-                    'Performance-aware development',
-                    'Research-ready architecture',
+                    'Start with the business or user problem, then design the solution',
+                    'Use data and structured thinking to support decisions',
+                    'Translate complex technical ideas for non-technical stakeholders',
+                    'Build modular, explainable, and performance-aware systems',
+                    'Document and iterate continuously for transparency',
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3 group">
                       <span className="text-primary font-mono text-sm mt-1">0{index + 1}</span>
