@@ -4,12 +4,12 @@ import avatarImage from '@/assets/avatar.png';
 
 const Hero = () => {
   const stats = [
-    { number: '3+', label: 'PROJECTS ONGOING' },
-    { number: 'B.Tech', label: 'AI/ML STUDENT' },
-    { number: 'DUAL', label: 'TECH × BUSINESS' },
+    { number: '2', label: 'LIVE ANALYTICS PROJECTS' },
+    { number: 'B.Tech', label: 'AI / ML BACKGROUND' },
+    { number: 'BA', label: 'INTERN @ AZENTRA' },
   ];
 
-  const marqueeText = 'AI SYSTEMS • COMPUTER VISION • CAD AUTOMATION • BUSINESS ANALYSIS • OPERATIONS • DATA-DRIVEN DECISIONS • IT INFRASTRUCTURE • ';
+  const marqueeText = 'BUSINESS ANALYSIS • DATA ANALYTICS • REQUIREMENTS GATHERING • PROCESS MAPPING • DASHBOARDS • SQL • EXCEL • STAKEHOLDER COMMUNICATION • AI / ML SUPPORT • ';
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
@@ -38,15 +38,15 @@ const Hero = () => {
             {/* Main Heading */}
             <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-display leading-[0.9] tracking-wide">
-                <span className="text-foreground">AI/ML</span>
+                <span className="text-foreground">BUSINESS &</span>
                 <br />
-                <span className="text-primary">ENGINEER & ANALYST</span>
+                <span className="text-primary">DATA ANALYST</span>
               </h1>
             </div>
 
             {/* Description */}
             <p className="text-base md:text-lg text-muted-foreground max-w-md animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-              Engineering student with a foundation in AI/ML, networking, and business operations. I want a role where I can combine engineering execution with analytical thinking — whether that's building AI solutions, analyzing processes as a business analyst trainee, or supporting IT infrastructure.
+              I help teams make sharper decisions by turning messy data, requirements, and workflows into clear insights, dashboards, and documented processes. Currently a Business Analytics Intern at Azentra Global, backed by a B.Tech in AI/ML — so I can speak fluently with both business and engineering teams.
             </p>
 
             {/* CTA Buttons */}
