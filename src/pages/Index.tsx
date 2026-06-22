@@ -3,10 +3,9 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
+import Internship from '@/components/Internship';
 import Education from '@/components/Education';
 import BusinessOps from '@/components/BusinessOps';
-import NetworkHardware from '@/components/NetworkHardware';
 import WhatMakesMeDifferent from '@/components/WhatMakesMeDifferent';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -33,10 +32,9 @@ const Index = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <Internship />
       <Education />
       <BusinessOps />
-      <NetworkHardware />
       <WhatMakesMeDifferent />
       <Contact />
       <Footer />
