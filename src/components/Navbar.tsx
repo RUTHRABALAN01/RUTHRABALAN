@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, Download } from 'lucide-react';
+
+const RESUME_URL = `${import.meta.env.BASE_URL}Ruthrabalan_Manthramoorthi_Resume.pdf`;
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,8 +50,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="cyber" size="sm">
-              Resume
+            <Button variant="cyber" size="sm" asChild>
+              <a href={RESUME_URL} download="Ruthrabalan_Manthramoorthi_Resume.pdf">
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -76,8 +81,11 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="cyber" size="sm" className="w-fit">
-                Resume
+              <Button variant="cyber" size="sm" className="w-fit" asChild>
+                <a href={RESUME_URL} download="Ruthrabalan_Manthramoorthi_Resume.pdf">
+                  <Download className="w-4 h-4" />
+                  Resume
+                </a>
               </Button>
             </div>
           </div>
