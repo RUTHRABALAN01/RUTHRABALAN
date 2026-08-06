@@ -1,5 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowRight, Download } from 'lucide-react';
+
+const RESUME_URL = `${import.meta.env.BASE_URL}Ruthrabalan_Manthramoorthi_Resume.pdf`;
 
 const Contact = () => {
   const socialLinks = [
@@ -30,11 +32,21 @@ const Contact = () => {
             execution with analytical thinking.
           </p>
           
-          {/* CTA Button */}
-          <Button variant="glow" size="xl" className="mb-12">
-            Start a Conversation
-            <ArrowRight className="w-5 h-5" />
-          </Button>
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <Button variant="glow" size="xl" asChild>
+              <a href="mailto:ruthraog@gmail.com">
+                Start a Conversation
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
+            <Button variant="cyber" size="xl" asChild>
+              <a href={RESUME_URL} download="Ruthrabalan_Manthramoorthi_Resume.pdf">
+                <Download className="w-5 h-5" />
+                Download Resume
+              </a>
+            </Button>
+          </div>
           
           {/* Social Links */}
           <div className="flex justify-center gap-6">
