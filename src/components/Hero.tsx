@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Star, Linkedin } from 'lucide-react';
+import { ArrowDown, Star, Linkedin, Download } from 'lucide-react';
 import avatarImage from '@/assets/avatar.png';
+
+const RESUME_URL = `${import.meta.env.BASE_URL}Ruthrabalan_Manthramoorthi_Resume.pdf`;
 
 const Hero = () => {
   const stats = [
@@ -69,6 +71,17 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
+                </a>
+              </Button>
+              <Button 
+                variant="cyber" 
+                size="lg"
+                className="font-semibold uppercase tracking-wider px-8 py-6 text-sm"
+                asChild
+              >
+                <a href={RESUME_URL} download="Ruthrabalan_Manthramoorthi_Resume.pdf">
+                  <Download className="w-4 h-4 mr-2" />
+                  Resume
                 </a>
               </Button>
             </div>
