@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Star, Linkedin } from 'lucide-react';
+import { ArrowDown, Star, Linkedin, Download } from 'lucide-react';
 import avatarImage from '@/assets/avatar.png';
+
+const RESUME_URL = `${import.meta.env.BASE_URL}Ruthrabalan_Manthramoorthi_Resume.pdf`;
 
 const Hero = () => {
   const stats = [
