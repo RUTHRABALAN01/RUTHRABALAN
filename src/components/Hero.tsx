@@ -73,6 +73,17 @@ const Hero = () => {
                   LinkedIn
                 </a>
               </Button>
+              <Button 
+                variant="cyber" 
+                size="lg"
+                className="font-semibold uppercase tracking-wider px-8 py-6 text-sm"
+                asChild
+              >
+                <a href={RESUME_URL} download="Ruthrabalan_Manthramoorthi_Resume.pdf">
+                  <Download className="w-4 h-4 mr-2" />
+                  Resume
+                </a>
+              </Button>
             </div>
           </div>
 
