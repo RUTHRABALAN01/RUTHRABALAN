@@ -5,8 +5,8 @@ const RESUME_URL = `${import.meta.env.BASE_URL}Ruthrabalan_Manthramoorthi_Resume
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, href: 'RUTHRABALAN01', label: 'GitHub' },
-    { icon: Linkedin, href: 'www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/RUTHRABALAN01', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:ruthrabalan06@gmail.com', label: 'Email' },
   ];
 
