@@ -54,6 +54,8 @@ const Contact = () => {
               <a
                 key={index}
                 href={social.href}
+                target={social.label === 'LinkedIn' ? '_blank' : undefined}
+                rel={social.label === 'LinkedIn' ? 'noopener noreferrer' : undefined}
                 aria-label={social.label}
                 className="w-12 h-12 rounded-xl border border-border bg-secondary/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
               >
