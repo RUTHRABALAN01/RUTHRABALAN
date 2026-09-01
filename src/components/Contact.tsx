@@ -7,7 +7,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Github, href: 'RUTHRABALAN01', label: 'GitHub' },
     { icon: Linkedin, href: 'www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:ruthrabalan06@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:ruthraog@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Contact = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button variant="glow" size="xl" asChild>
-              <a href="mailto:ruthrabalan06@gmail.com">
+              <a href="mailto:ruthraog@gmail.com">
                 Start a Conversation
                 <ArrowRight className="w-5 h-5" />
               </a>
@@ -65,10 +65,10 @@ const Contact = () => {
           {/* Email Display */}
           <div className="mt-10">
             <a
-              href="mailto:ruthrabalan06@gmail.com"
+              href="mailto:ruthraog@gmail.com"
               className="font-mono text-muted-foreground hover:text-primary transition-colors"
             >
-              ruthrabalan06@gmail.com
+              ruthraog@gmail.com
             </a>
           </div>
         </div>
