@@ -68,7 +68,7 @@ const Hero = () => {
                 className="font-semibold uppercase tracking-wider px-8 py-6 text-sm"
                 asChild
               >
-                <a href="https://www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/ruthrabalan-manthramoorthi-561561360/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
                 </a>
