@@ -19,11 +19,11 @@ type Internship = {
 const internships: Internship[] = [
   {
     role: 'Project Coordinator Intern',
-    company: 'Azentra Global — Joy University Incubation Centre',
+    company: 'Azentra Global',
     period: 'Sep 2026 — Present',
     ongoing: true,
     summary:
-      'Selected as a Project Coordinator Intern at the Joy University Incubation Centre under Azentra Global. I support real-world project coordination, team activities, meetings, and presentations at the Incubation Centre — bridging technical delivery and stakeholder communication.',
+      'Working as a Project Coordinator Intern under Azentra Global. I support real-world project coordination, team activities, meetings, and presentations — bridging technical delivery and stakeholder communication.',
     responsibilities: [
       {
         icon: FolderKanban,
