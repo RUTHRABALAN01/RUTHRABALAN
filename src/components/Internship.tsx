@@ -63,19 +63,19 @@ const internships: Internship[] = [
     responsibilities: [
       {
         icon: BarChart3,
-        text: 'Business Analytics — Collecting, cleaning, and analyzing data to support operational decisions',
+        text: 'Business Analytics — Collected, cleaned, and analyzed data to support operational decisions',
       },
       {
         icon: Lightbulb,
-        text: 'Project Development — Contributing to 2 ongoing product/analytics projects from requirements to delivery',
+        text: 'Project Development — Contributed to 2 product/analytics projects from requirements to delivery',
       },
       {
         icon: Users,
-        text: 'Stakeholder Coordination — Supporting communication between technical teams and business units',
+        text: 'Stakeholder Coordination — Supported communication between technical teams and business units',
       },
       {
         icon: Briefcase,
-        text: 'Process Documentation — Creating clear reports and workflows to improve transparency and efficiency',
+        text: 'Process Documentation — Created clear reports and workflows to improve transparency and efficiency',
       },
     ],
     outcomes: [
@@ -149,7 +149,7 @@ const Internship = () => {
 
               <div className="p-8">
                 <h4 className="font-mono text-primary text-sm mb-6 flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4" /> WHAT I'M LEARNING
+                  <CheckCircle className="w-4 h-4" /> {item.ongoing ? "WHAT I'M LEARNING" : 'WHAT I LEARNED'}
                 </h4>
                 <ul className="space-y-3">
                   {item.outcomes.map((outcome, oIndex) => (
