@@ -27,25 +27,30 @@ const internships: Internship[] = [
     responsibilities: [
       {
         icon: FolderKanban,
-        text: 'Project Coordination — Tracking progress, tasks, and timelines across ongoing incubation projects',
-      },
-      {
-        icon: ClipboardList,
-        text: 'Team Activities — Organizing and supporting day-to-day team workflows and deliverables',
+        text: 'Project Coordination — Track progress, tasks, and timelines across ongoing projects to keep delivery on schedule',
       },
       {
         icon: Users,
-        text: 'Meetings & Communication — Coordinating meetings between technical teams and stakeholders',
+        text: 'Developer & Stakeholder Liaison — Work closely with developers and stakeholders to align expectations, scope, and priorities',
+      },
+      {
+        icon: ClipboardList,
+        text: 'Roadblock Resolution — Help developers draft and structure pending work when they hit a roadblock, clarifying what needs to be done',
+      },
+      {
+        icon: CheckCircle,
+        text: 'Work Evaluation & Review — Evaluate and review developer deliverables against requirements before sign-off',
       },
       {
         icon: Presentation,
-        text: 'Presentations — Assisting with project presentations and reviews at the Incubation Centre',
+        text: 'Meetings & Presentations — Coordinate meetings, reviews, and presentations between technical teams and business units',
       },
     ],
     outcomes: [
-      'Gaining hands-on exposure to real-world project coordination at a university incubation centre',
-      'Developing leadership, organization, and stakeholder-management skills in a live environment',
-      'Learning to align project execution with business goals and incubation milestones',
+      'Gained hands-on exposure to real-world project coordination and cross-functional teamwork',
+      'Developed the ability to unblock developers and translate stakeholder needs into clear, actionable work',
+      'Strengthened review and evaluation skills by assessing deliverables against requirements',
+      'Improved leadership, organization, and stakeholder-management skills in a live environment',
     ],
   },
   {
