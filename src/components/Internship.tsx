@@ -63,7 +63,7 @@ const internships: Internship[] = [
     responsibilities: [
       {
         icon: BarChart3,
-        text: 'Business Analytics — Collecting, cleaning, and analyzing data to support operational decisions',
+        text: 'Business Analytics — Collected, cleaned, and analyzed data to support operational decisions',
       },
       {
         icon: Lightbulb,
@@ -71,11 +71,11 @@ const internships: Internship[] = [
       },
       {
         icon: Users,
-        text: 'Stakeholder Coordination — Supporting communication between technical teams and business units',
+        text: 'Stakeholder Coordination — Supported communication between technical teams and business units',
       },
       {
         icon: Briefcase,
-        text: 'Process Documentation — Creating clear reports and workflows to improve transparency and efficiency',
+        text: 'Process Documentation — Created clear reports and workflows to improve transparency and efficiency',
       },
     ],
     outcomes: [
