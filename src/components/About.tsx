@@ -32,8 +32,9 @@ const About = () => {
                 learning to automate complex engineering workflows.
               </p>
               <p>
-                Alongside engineering, I am actively preparing for business analyst, 
-                operations, and technical operations roles. I focus on understanding the 
+                Alongside engineering, I am actively targeting an Associate Product 
+                Manager role — combining my coordination, analytics, and stakeholder 
+                experience to own product execution end-to-end. I focus on understanding the 
                 "why" behind a problem — gathering requirements, mapping processes, interpreting 
                 data, and communicating solutions so both technical teams and management can 
                 align and act.
