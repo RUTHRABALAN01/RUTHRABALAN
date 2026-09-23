@@ -149,7 +149,7 @@ const Internship = () => {
 
               <div className="p-8">
                 <h4 className="font-mono text-primary text-sm mb-6 flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4" /> WHAT I'M LEARNING
+                  <CheckCircle className="w-4 h-4" /> {item.ongoing ? "WHAT I'M LEARNING" : 'WHAT I LEARNED'}
                 </h4>
                 <ul className="space-y-3">
                   {item.outcomes.map((outcome, oIndex) => (
