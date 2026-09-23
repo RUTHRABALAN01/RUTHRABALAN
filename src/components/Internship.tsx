@@ -67,7 +67,7 @@ const internships: Internship[] = [
       },
       {
         icon: Lightbulb,
-        text: 'Project Development — Contributing to 2 ongoing product/analytics projects from requirements to delivery',
+        text: 'Project Development — Contributed to 2 product/analytics projects from requirements to delivery',
       },
       {
         icon: Users,
