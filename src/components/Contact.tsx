@@ -27,9 +27,9 @@ const Contact = () => {
             <span className="text-gradient">Tech & Business</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Interested in AI/ML engineering, business analysis, CAD automation, computer vision, 
-            or IT operations roles? I'm open to opportunities where I can combine technical 
-            execution with analytical thinking.
+            Currently targeting an Associate Product Manager role — open to opportunities 
+            where I can combine product thinking, coordination, and technical execution to 
+            deliver measurable impact.
           </p>
           
           {/* CTA Buttons */}
