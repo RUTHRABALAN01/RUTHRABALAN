@@ -1,6 +1,18 @@
 const Skills = () => {
   const skillCategories = [
     {
+      title: 'Product Management',
+      skills: ['Product Strategy', 'Roadmapping', 'Requirements & Prioritization', 'Go-to-Market', 'User Research', 'Product Discovery'],
+    },
+    {
+      title: 'Stakeholder & Delivery',
+      skills: ['Stakeholder Management', 'Cross-Functional Leadership', 'Agile Delivery', 'Sprint Coordination', 'Sign-off & Review', 'Status Reporting'],
+    },
+    {
+      title: 'Analytics & Metrics',
+      skills: ['Metrics & KPIs', 'Data Interpretation', 'A/B Testing Concepts', 'Excel / Spreadsheets', 'Basic SQL', 'Visualization Thinking'],
+    },
+    {
       title: 'Artificial Intelligence',
       skills: ['Machine Learning', 'Deep Learning', 'Supervised Learning', 'Unsupervised Learning', 'Model Evaluation'],
     },
@@ -9,42 +21,32 @@ const Skills = () => {
       skills: ['OpenCV', 'Multi-Camera Systems', 'Object Tracking', 'Point Clouds', 'Mesh Processing', 'B-Rep Concepts'],
     },
     {
-      title: 'Programming Languages',
-      skills: ['Python', 'C/C++ (basic)', 'MATLAB (academic)'],
-    },
-    {
-      title: 'Engineering & Systems',
-      skills: ['CAD Systems', 'Visualization Pipelines', 'Rule-Based Systems', 'Optimization', 'Simulation-Aware Design'],
-    },
-    {
-      title: 'Business Analysis & Operations',
-      skills: ['Requirements Gathering', 'Process Mapping', 'Stakeholder Communication', 'Documentation', 'Process Improvement'],
-    },
-    {
-      title: 'Data & Analytics',
-      skills: ['Data Interpretation', 'Excel / Spreadsheets', 'Basic SQL', 'Visualization Thinking', 'Metrics & KPIs'],
+      title: 'Programming & Tools',
+      skills: ['Python', 'C/C++ (basic)', 'Git', 'GitHub', 'Jupyter', 'VS Code'],
     },
     {
       title: 'AI / ML Tools',
       skills: ['Data Preprocessing', 'Feature Engineering', 'Neural Networks', 'Model Training', 'Evaluation Metrics'],
     },
     {
-      title: 'Tools & Platforms',
-      skills: ['Git', 'GitHub', 'Linux', 'Fusion 360 API', 'Jupyter', 'VS Code'],
+      title: 'Engineering & Systems',
+      skills: ['CAD Systems', 'Visualization Pipelines', 'Rule-Based Systems', 'Optimization', 'Simulation-Aware Design'],
     },
   ];
 
   const coreSkills = [
-    'Artificial Intelligence',
-    'Machine Learning', 
-    'Deep Learning',
-    'Computer Vision',
-    'Business Analysis',
-    'Requirements Gathering',
+    'Product Strategy',
+    'Roadmapping',
+    'Requirements & Prioritization',
+    'Stakeholder Management',
+    'Cross-Functional Leadership',
+    'Product Execution',
+    'User Research',
+    'Metrics & KPIs',
     'Data-Driven Decisions',
-    'Stakeholder Communication',
-    'CAD Automation',
-    'System-Level Thinking',
+    'Go-to-Market',
+    'Agile Delivery',
+    'AI/ML Engineering',
   ];
 
   return (
@@ -53,12 +55,12 @@ const Skills = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-primary font-mono text-sm">// TECH STACK</span>
+          <span className="text-primary font-mono text-sm">// PRODUCT + ENGINEERING STACK</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
             Skills & <span className="text-gradient">Competencies</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A versatile toolkit spanning AI/ML engineering, business analysis, data interpretation, and IT operations
+            A product-management toolkit grounded in AI/ML engineering, business analytics, and data-driven decision making
           </p>
         </div>
         

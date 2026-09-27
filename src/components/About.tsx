@@ -17,32 +17,31 @@ const About = () => {
             <div className="space-y-4">
               <span className="text-primary font-mono text-sm">// ABOUT ME</span>
               <h2 className="text-4xl md:text-5xl font-bold">
-                AI Engineer with a
+                Aspiring Product
                 <br />
-                <span className="text-gradient">Business Lens</span>
+                <span className="text-gradient">Manager</span>
               </h2>
             </div>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                I am a B.Tech Artificial Intelligence and Machine Learning student 
-                who builds practical, system-level AI solutions while also developing 
-                strong analytical and operational skills. My technical work combines 
-                classical algorithms, computer vision, geometric reasoning, and deep 
-                learning to automate complex engineering workflows.
+                I am an aspiring Associate Product Manager with a B.Tech in Artificial 
+                Intelligence and Machine Learning and hands-on experience in business 
+                analytics and project coordination. My engineering background means I can 
+                speak the language of developers; my analytics and stakeholder work means 
+                I can speak the language of business.
               </p>
               <p>
-                Alongside engineering, I am actively targeting an Associate Product 
-                Manager role — combining my coordination, analytics, and stakeholder 
-                experience to own product execution end-to-end. I focus on understanding the 
-                "why" behind a problem — gathering requirements, mapping processes, interpreting 
-                data, and communicating solutions so both technical teams and management can 
-                align and act.
+                I focus on the full product execution loop — understanding the user and 
+                business problem, gathering and prioritizing requirements, mapping 
+                roadmaps, aligning stakeholders and developers, and using data to decide 
+                what to build next. My goal is to own a product end-to-end: discovery, 
+                delivery, and measurable impact.
               </p>
               <p>
-                I value clarity, transparency, and measurable impact. I document my work 
-                phase by phase and aim to deliver solutions that are technically sound 
-                <em>and</em> commercially meaningful.
+                I value clarity, transparency, and measurable outcomes. I document 
+                decisions phase by phase so product choices stay reversible and 
+                explainable — technically sound <em>and</em> commercially meaningful.
               </p>
             </div>
             
@@ -72,11 +71,11 @@ const About = () => {
                 
                 <div className="space-y-4">
                   {[
-                    'Start with the business or user problem, then design the solution',
-                    'Use data and structured thinking to support decisions',
-                    'Translate complex technical ideas for non-technical stakeholders',
-                    'Build modular, explainable, and performance-aware systems',
-                    'Document and iterate continuously for transparency',
+                    'Start with the user and business problem, then define the product',
+                    'Use data, metrics, and structured thinking to prioritize decisions',
+                    'Translate between technical and business stakeholders to drive alignment',
+                    'Own requirements, roadmapping, and cross-functional delivery',
+                    'Measure impact and iterate continuously for transparency',
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3 group">
                       <span className="text-primary font-mono text-sm mt-1">0{index + 1}</span>
