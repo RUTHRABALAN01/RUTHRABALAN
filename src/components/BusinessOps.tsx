@@ -37,11 +37,11 @@ const BusinessOps = () => {
     <section id="business" className="py-32 relative">
       <div className="container mx-auto px-6">
         <div className="space-y-4 mb-16">
-          <span className="text-primary font-mono text-sm">// BUSINESS & OPERATIONS</span>
+          <span className="text-primary font-mono text-sm">// PRODUCT & OPERATIONS</span>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Business & Operations
+            Product & Operations
             <br />
-            <span className="text-gradient">Understanding</span>
+            <span className="text-gradient">Execution</span>
           </h2>
         </div>
 
@@ -50,12 +50,12 @@ const BusinessOps = () => {
           <div className="p-6 rounded-2xl border-gradient relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
             <p className="relative text-muted-foreground leading-relaxed text-lg">
-              As an engineering student with a strong foundation in AI and systems thinking, 
-              I bring a unique ability to <span className="text-foreground font-semibold">bridge the gap between technical teams and management</span>. 
-              I combine deep technical knowledge with business acumen — understanding not just 
-              <em> how</em> systems work, but <em>why</em> they matter to the business. This dual perspective 
-              allows me to communicate effectively across departments, translate requirements into 
-              actionable plans, and drive decisions that are both technically sound and commercially viable.
+              As an aspiring product manager with an AI/ML engineering foundation, 
+              I bring a unique ability to <span className="text-foreground font-semibold">bridge the gap between technical teams and the business</span>. 
+              I combine deep technical knowledge with product and business acumen — understanding not just 
+              <em> how</em> systems work, but <em>why</em> they matter to users and the bottom line. This dual perspective 
+              lets me gather requirements, shape roadmaps, align stakeholders, and drive product 
+              decisions that are both technically sound and commercially viable.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const BusinessOps = () => {
         <div className="flex items-center gap-3 mt-12">
           <BarChart3 className="w-5 h-5 text-primary" />
           <span className="text-muted-foreground font-mono text-xs">
-            Engineering mindset × Business thinking = Impact
+            Product thinking × Engineering mindset = Impact
           </span>
         </div>
       </div>

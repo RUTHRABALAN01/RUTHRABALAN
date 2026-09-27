@@ -22,14 +22,14 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-primary font-mono text-sm">// GET IN TOUCH</span>
           <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
-            Let's Collaborate on
+            Let's Build the
             <br />
-            <span className="text-gradient">Tech & Business</span>
+            <span className="text-gradient">Right Product</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Currently targeting an Associate Product Manager role — open to opportunities 
-            where I can combine product thinking, coordination, and technical execution to 
-            deliver measurable impact.
+            Aspiring Associate Product Manager open to opportunities where I can combine 
+            product strategy, stakeholder alignment, and technical execution to ship 
+            products with measurable impact.
           </p>
           
           {/* CTA Buttons */}
