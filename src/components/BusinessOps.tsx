@@ -12,24 +12,24 @@ const BusinessOps = () => {
 
   const coreStrengths = [
     {
+      title: 'Product Strategy & Roadmapping',
+      description: 'Defining what to build and why — prioritizing features, shaping roadmaps, and tying every decision back to user and business goals.',
+    },
+    {
+      title: 'Requirements & Stakeholder Management',
+      description: 'Gathering, documenting, and prioritizing stakeholder needs, then aligning technical and business teams around a shared definition of done.',
+    },
+    {
+      title: 'Cross-Functional Leadership',
+      description: 'Coordinating developers, designers, and business units — unblocking teams, running reviews, and driving delivery toward deadlines.',
+    },
+    {
+      title: 'Data-Driven Prioritization',
+      description: 'Using metrics, analytics, and structured thinking to evaluate trade-offs, measure impact, and decide what to build next.',
+    },
+    {
       title: 'Technical Communication',
-      description: 'Translating complex AI and engineering concepts into clear, actionable language that non-technical stakeholders can understand and act upon.',
-    },
-    {
-      title: 'Client Handling & Requirements',
-      description: 'Experienced in gathering requirements, understanding user needs, and aligning technical solutions with business objectives.',
-    },
-    {
-      title: 'Problem Solving & Decision Making',
-      description: 'Structured, analytical approach to breaking down problems, evaluating trade-offs, and making data-driven decisions under constraints.',
-    },
-    {
-      title: 'Team Coordination & Leadership',
-      description: 'Proven ability to coordinate cross-functional teams, organize events, and drive collaborative efforts toward deadlines.',
-    },
-    {
-      title: 'Analytical & Data-Driven Thinking',
-      description: 'Leveraging quantitative analysis and metrics to support strategic decisions, identify patterns, and measure impact.',
+      description: 'Translating complex AI and engineering concepts into clear, actionable language that non-technical stakeholders can evaluate and act on.',
     },
   ];
 
