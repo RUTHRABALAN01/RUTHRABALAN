@@ -82,41 +82,6 @@ const caseStudies: CaseStudy[] = [
       { label: 'Cycle', value: 'Req → Delivery' },
     ],
   },
-  {
-    id: '03',
-    title: 'Translating AI/ML Research into Usable Systems',
-    context:
-      'Academic and personal AI/ML work — computer vision, geometric reasoning, CAD automation — only creates value when it is usable. The recurring challenge was bridging a research-grade model and a product-grade workflow that a non-technical user could actually operate.',
-    role: 'AI/ML Engineer — productizing research into explainable systems',
-    tags: ['Product Execution', 'Technical Translation', 'Modular Design'],
-    approach: [
-      {
-        icon: Target,
-        text: 'Started from the user or business problem, then designed the solution rather than leading with the model',
-      },
-      {
-        icon: Layers,
-        text: 'Built modular, explainable, and performance-aware systems so outputs could be trusted and reviewed',
-      },
-      {
-        icon: Users,
-        text: 'Translated complex technical ideas for non-technical stakeholders so they could evaluate and adopt the output',
-      },
-      {
-        icon: BarChart3,
-        text: 'Used data and structured thinking to support every design decision',
-      },
-    ],
-    outcomes: [
-      'Built AI systems that were technically sound and commercially meaningful, not just research demos',
-      'Improved adoption by making model outputs explainable and reviewable for stakeholders',
-      'Documented work phase by phase to keep product decisions transparent and reversible',
-    ],
-    metrics: [
-      { label: 'Approach', value: 'Problem-first' },
-      { label: 'Systems', value: 'Explainable' },
-    ],
-  },
 ];
 
 const CaseStudies = () => {
