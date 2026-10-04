@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, Rocket, CheckCircle, Users, BarChart3, Lightbulb, ClipboardList, Presentation, FolderKanban } from 'lucide-react';
+import { Briefcase, Calendar, Rocket, CheckCircle, Users, BarChart3, Lightbulb, ClipboardList, Presentation, FolderKanban, Target, ShieldAlert } from 'lucide-react';
 
 type Responsibility = {
   icon: React.ElementType;
@@ -184,6 +184,63 @@ const Internship = () => {
                   ))}
                 </div>
               </div>
+
+              {item.projects && item.projects.length > 0 && (
+                <div className="p-8 border-b border-border">
+                  <h4 className="font-mono text-primary text-sm mb-6 flex items-center gap-2">
+                    <FolderKanban className="w-4 h-4" /> FEATURED WORK
+                  </h4>
+                  <div className="space-y-6">
+                    {item.projects.map((project, pIndex) => (
+                      <div
+                        key={pIndex}
+                        className="rounded-xl border border-primary/20 bg-secondary/40 p-6 hover:border-primary/40 transition-colors"
+                      >
+                        <div className="flex flex-wrap items-center gap-3 mb-3">
+                          <h5 className="text-xl font-bold font-mono text-foreground">
+                            {project.title}
+                          </h5>
+                        </div>
+
+                        <div className="flex flex-wrap items-center gap-4 mb-4 text-sm font-mono text-muted-foreground">
+                          <span className="flex items-center gap-2">
+                            <Calendar className="w-4 h-4 text-primary" />
+                            {project.period}
+                          </span>
+                          <span className="flex items-center gap-2">
+                            <Target className="w-4 h-4 text-primary" />
+                            {project.role}
+                          </span>
+                        </div>
+
+                        <p className="text-muted-foreground leading-relaxed mb-5">
+                          {project.summary}
+                        </p>
+
+                        <div className="space-y-3 mb-5">
+                          {project.highlights.map((hl, hIndex) => (
+                            <div key={hIndex} className="flex items-start gap-3 p-3 rounded-lg bg-secondary/60">
+                              <hl.icon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                              <span className="text-muted-foreground text-sm">{hl.text}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="flex flex-wrap gap-2">
+                          {project.tags.map((tag, tIndex) => (
+                            <span
+                              key={tIndex}
+                              className="px-3 py-1 text-xs font-mono bg-primary/10 text-primary border border-primary/30 rounded-full"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <div className="p-8">
                 <h4 className="font-mono text-primary text-sm mb-6 flex items-center gap-2">
