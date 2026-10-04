@@ -5,6 +5,15 @@ type Responsibility = {
   text: string;
 };
 
+type Project = {
+  title: string;
+  period: string;
+  role: string;
+  tags: string[];
+  summary: string;
+  highlights: Responsibility[];
+};
+
 type Internship = {
   role: string;
   company: string;
@@ -14,6 +23,7 @@ type Internship = {
   summary: string;
   responsibilities: Responsibility[];
   outcomes: string[];
+  projects?: Project[];
 };
 
 const internships: Internship[] = [
