@@ -56,6 +56,34 @@ const internships: Internship[] = [
         text: 'Meetings & Presentations — Coordinate meetings, reviews, and presentations between technical teams and business units',
       },
     ],
+    projects: [
+      {
+        title: 'AI/ML Campus Irregularity & Anomaly Detection System',
+        period: 'Sep 2026 — Present',
+        role: 'Technical Product Lead — driving requirements, schema design, and engineering handoff',
+        tags: ['Product Discovery', 'API Schema Design', 'ML Scoping', 'MLOps'],
+        summary:
+          'On a Campus Automation platform covering attendance and facility access, the admin team needed to detect unauthorized, fraudulent, or irregular movements — but pending scanner-hardware decisions threatened to stall every backend and ML workstream. I owned the product requirements end to end: designed the API schema contract, scoped a decoupled ML anomaly-detection workflow, and enabled engineering teams to build synthetic evaluation pipelines in parallel while hardware vendors were still being selected.',
+        highlights: [
+          {
+            icon: ClipboardList,
+            text: 'Hardware-agnostic API contract — standardized a shared JSON event schema (person, location, timestamp, event type) so ML pipelines could be built on clean event logs without waiting for vendor SDKs',
+          },
+          {
+            icon: Target,
+            text: 'Rule engine vs. ML scoping — ran a trade-off analysis so deterministic rules handled fixed tardiness, impossible-geography and role violations, while unsupervised models (Isolation Forest / One-Class SVM) handled only subtle behavioral anomalies',
+          },
+          {
+            icon: BarChart3,
+            text: 'Synthetic data pipeline — defined the functional requirements for a synthetic event generator injecting realistic anomalies (odd-hour access, location flips, frequency spikes) to establish a baseline anomaly benchmark before hardware installation',
+          },
+          {
+            icon: ShieldAlert,
+            text: 'Trust & rollout safety — replaced binary flags with tiered confidence alerts (Review Suggested vs. High-Confidence Flag) and mandated a zero-alert shadow deployment phase to calibrate thresholds before live notifications',
+          },
+        ],
+      },
+    ],
     outcomes: [
       'Gained hands-on exposure to real-world project coordination and cross-functional teamwork',
       'Developed the ability to unblock developers and translate stakeholder needs into clear, actionable work',
