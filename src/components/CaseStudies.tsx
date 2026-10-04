@@ -96,8 +96,8 @@ const CaseStudies = () => {
             How I Drive <span className="text-gradient">Product Execution</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl leading-relaxed">
-            Three lenses on the same product loop — understand the problem, align people, ship something measurable.
-            Each shows how I combine coordination, analytics, and product thinking to move a product forward.
+            Two lenses on the same product loop — understand the problem, align people, ship something measurable.
+            Each shows how I combine coordination and analytics to move a product forward.
           </p>
         </div>
 
