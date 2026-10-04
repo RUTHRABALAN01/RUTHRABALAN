@@ -94,7 +94,7 @@ const internships: Internship[] = [
   {
     role: 'Business Analytics Intern',
     company: 'Azentra Global',
-    period: 'Jul 2026 — Sep 2026',
+    period: 'Jun 2026 — Sep 2026',
     ongoing: false,
     summary:
       'Completed a Business Analytics Internship working on two product/analytics projects from requirements to delivery. I supported the team with data analysis, requirements understanding, process documentation, and cross-functional coordination — applying analytical thinking and technical skills to deliver practical business value.',
